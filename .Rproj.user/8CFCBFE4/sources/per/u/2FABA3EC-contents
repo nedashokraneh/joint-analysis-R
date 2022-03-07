@@ -1,0 +1,29 @@
+library(umap)
+library(ggplot2)
+X = data.frame(X1 = rnorm(1000,0,1))
+X$X2 = X$X1
+X$X3 = X$X1
+X$X4 = X$X1
+X.umap = umap(X)
+X[,c("umap1","umap2")] = X.umap$layout
+ggplot(X) + geom_point(aes(x=umap1, y=umap2, color=X1))
+
+Y = data.frame(Y1 = rnorm(1000,0,1), Y2 = rnorm(1000,0,1), Y3 = rnorm(1000,0,1), 
+               Y4 = rnorm(1000,0,1))
+Y.umap = umap(Y)
+Y[,c("umap1", "umap2")] = Y.umap$layout
+ggplot(Y) + geom_point(aes(x=umap1, y=umap2, color = Y1))
+
+Z = data.frame(Z1 = rnorm(1000,0,1))
+Z.umap = umap(Z)
+Z[,c("umap1","umap2")] = Z.umap$layout
+ggplot(Z) + geom_point(aes(x=umap1, y=umap2, color = Z1))
+
+X1 = data.frame(X11 = rnorm(500,2,1), X12 = rnorm(500,10,1), X13 = rnorm(500,5,1))
+X2 = data.frame(X11 = rnorm(500,1,1), X12 = rnorm(500,12,1), X13 = rnorm(500,7,1))
+X = rbind(X1,X2)
+km = kmeans(X, 2, iter.max = 10, nstart = 1)
+X$class = km$cluster
+X.umap = umap(X)
+X[,c("umap1","umap2")] = X.umap$layout
+ggplot(X) + geom_point(aes(x=umap1, y=umap2, color=class))

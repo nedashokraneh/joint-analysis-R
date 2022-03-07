@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599171919404.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1453902292",
+    "id" : "68E9C54C",
+    "lastKnownWriteTime" : 1596081668,
+    "last_content_update" : 1596081668,
+    "path" : "/media/nedooshki/f4f0aea6-900a-437f-82e1-238569330477/Hi-C+ChIP-seq-Chromatin-State-Annotation/src/evaluation/joint-analysis/SNIPER_analysis.R",
+    "project_path" : "SNIPER_analysis.R",
+    "properties" : {
+        "cursorPosition" : "2,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

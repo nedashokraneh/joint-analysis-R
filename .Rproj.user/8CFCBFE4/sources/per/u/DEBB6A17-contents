@@ -1,0 +1,10 @@
+bedgraph_path = "../../../data/genomic-assays/vir_res_100000/"
+wig_path = "../../../data/genomic-assays/wigs/"
+for (f in list.files(bedgraph_path)){
+  f_path = paste(bedgraph_path, f, sep="")
+  df = read.csv(f_path, sep = "\t", header = FALSE)
+  df[,2] = as.integer(df[,2]*100000)
+  df[,3] = as.integer(df[,3]*100000)
+  write.table(df,file = paste(wig_path,f, sep=""), row.names = FALSE, col.names = FALSE, quote = FALSE, sep = "\t")
+  
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599171333104.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1490140759",
+    "id" : "47EC77DD",
+    "lastKnownWriteTime" : 1596081668,
+    "last_content_update" : 1596081668,
+    "path" : "/media/nedooshki/f4f0aea6-900a-437f-82e1-238569330477/Hi-C+ChIP-seq-Chromatin-State-Annotation/src/evaluation/joint-analysis/utils.R",
+    "project_path" : "utils.R",
+    "properties" : {
+        "cursorPosition" : "0,14",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
